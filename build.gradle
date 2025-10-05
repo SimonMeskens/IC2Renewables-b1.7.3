@@ -3,7 +3,7 @@ plugins {
     id 'xyz.wagyourtail.unimined' version '0.4.10-SNAPSHOT'
 }
 
-group 'com.example'
+group 'zhil'
 version '1.0.0'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -48,15 +48,22 @@ mappings {
     stub("CLIENT").withMappings(["searge", "mcp"]) {
         c("ModLoader", "net/minecraft/src/ModLoader", "net/minecraft/src/ModLoader")
         c("BaseMod", "net/minecraft/src/BaseMod", "net/minecraft/src/BaseMod")
+
+        c("FCBlockBlockDispenser", "net/minecraft/src/FCBlockBlockDispenser", "net/minecraft/src/FCBlockBlockDispenser")
     }
 }
 
 // Add your dependencies here.
 dependencies {
     minecraft "net.minecraft:minecraft:b1.7.3"
+
     jarMod "risugami:modloader:b1.7.3"
-    // Uncomment the following line if you want to use Forge
-    // jarMod "Meefy777.Reforged:reforged-client-1.0.2.zip:1.0.2"
+    jarMod "modloadermp:modloadermp:b1.7.3:client"
+
+    jarMod files("mods/minecraftforge-client-1.0.6.jar")
+
+    jarMod files("mods/b1.7.3.HowManyItems.v4.2.0.zip")
+    jarMod files("mods/IndustrialCraft2 v1.00.zip")
 
     mappings "de.oceanlabs.mcp:mcp_legacy:4.3-b1.7.3@zip"
 }

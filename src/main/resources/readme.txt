@@ -1,1 +1,0 @@
-Place your resources (textures, etc.) here
