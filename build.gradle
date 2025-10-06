@@ -48,8 +48,6 @@ mappings {
     stub("CLIENT").withMappings(["searge", "mcp"]) {
         c("ModLoader", "net/minecraft/src/ModLoader", "net/minecraft/src/ModLoader")
         c("BaseMod", "net/minecraft/src/BaseMod", "net/minecraft/src/BaseMod")
-
-        c("FCBlockBlockDispenser", "net/minecraft/src/FCBlockBlockDispenser", "net/minecraft/src/FCBlockBlockDispenser")
     }
 }
 
