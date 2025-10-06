@@ -9,7 +9,7 @@ public class mod_IC2Renewables extends BaseMod {
 
     @Override
     public String Version() {
-        return "1.0.0";
+        return "1.1.0";
     }
 
     /* Mod Menu Information */
